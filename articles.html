@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Articles — MedNotes</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body>
+<header><nav class="nav wrap"><a class="brand" href="index.html">✚ <span>MedNotes</span></a><div class="links"><a href="articles.html">Articles</a><a href="index.html#about">About</a></div><a class="btn mini" href="index.html">Home</a></nav></header>
+<main class="wrap page"><p class="eyebrow">THE LIBRARY</p><h1>Medical notes.</h1><p class="lead narrow">Short, readable explanations for learning medicine.</p>
+<div class="filters"><button class="filter active" onclick="filterCards('all',this)">All</button><button class="filter" onclick="filterCards('clinical',this)">Clinical</button><button class="filter" onclick="filterCards('pharmacology',this)">Pharmacology</button><button class="filter" onclick="filterCards('research',this)">Research</button></div>
+<div class="cards library">
+<article data-cat="clinical"><span class="tag">CLINICAL MEDICINE</span><h2>Why Does Hypertension Damage the Kidneys?</h2><p>Understand the vascular and glomerular changes associated with long-standing hypertension.</p><a href="article-hypertension-kidney.html">Read article →</a></article>
+<article data-cat="pharmacology"><span class="tag">PHARMACOLOGY</span><h2>How to Think About Antibiotic Classes</h2><p>Coming soon: a practical framework for antibiotic learning.</p><a href="#">Coming soon →</a></article>
+<article data-cat="research"><span class="tag">RESEARCH</span><h2>How to Read a Research Paper</h2><p>Coming soon: a structured approach for first-time readers.</p><a href="#">Coming soon →</a></article>
+</div></main>
+<footer><div class="wrap foot"><span>✚ MedNotes</span><span>Educational content only</span></div></footer>
+<script>function filterCards(cat,btn){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.library article').forEach(x=>x.style.display=cat==='all'||x.dataset.cat===cat?'block':'none')}</script>
+</body></html>
